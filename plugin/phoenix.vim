@@ -58,6 +58,9 @@ let s:projections = {
   \ "web/templates/*.html.exs": {
   \   "type": "template"
   \ },
+  \ "web/templates/*.html.haml": {
+  \   "type": "template"
+  \ },
   \ "web/router.ex": {
   \   "type": "router"
   \ },
@@ -90,5 +93,5 @@ augroup phoenix_path
   autocmd User Phoenix call phoenix#SetupSurround()
   autocmd User Phoenix
         \ let &l:path = 'lib/**,web/**,test/**,config/**' . &path |
-        \ let &l:suffixesadd = '.ex,.exs,.html.eex' . &suffixesadd
+        \ let &l:suffixesadd = '.ex,.exs,.html.eex,.haml' . &suffixesadd
 augroup END
